@@ -56,7 +56,7 @@ microondas("Macarrão", 16);
 microondas("feiJão", 36);
 microondas("bigadeiro", 8);
 
-// Versão de código menor, mas menos bonito no console usando objects do JS.
+// Versão de código menor usando objects do JS.
 
 const microondas2 = (opcao = "", tempo = 0) => {
   let menu = {
@@ -66,11 +66,15 @@ const microondas2 = (opcao = "", tempo = 0) => {
     "feijão": 12,
     brigadeiro: 8,
   }
-  if (!menu[opcao.toLowerCase()]) return console.log("Prato inexistente.")
-  if(tempo >= menu[opcao.toLowerCase()] * 3) console.log("Kabumm!!!");
-  else if(tempo >= menu[opcao.toLowerCase()] * 2) console.log("A comida queimou!");
-  else if(tempo >= menu[opcao.toLowerCase()]) console.log("A comida está pronta, bom apetite!");
-  else console.log("Tempo insuficiente.")
+
+  console.log("COMIDA: " + opcao.toUpperCase())
+  console.log("TEMPO: " + tempo)
+
+  if (!menu[opcao.toLowerCase()]) return console.log("RESULTADO: Prato inexistente.")
+  if(tempo >= menu[opcao.toLowerCase()] * 3) console.log("RESULTADO: Kabumm!!!");
+  else if(tempo >= menu[opcao.toLowerCase()] * 2) console.log("RESULTADO: A comida queimou!");
+  else if(tempo >= menu[opcao.toLowerCase()]) console.log("RESULTADO: A comida está pronta, bom apetite!");
+  else console.log("RESULTADO: Tempo insuficiente.")
 }
 
 microondas2("pipoca", 12);
