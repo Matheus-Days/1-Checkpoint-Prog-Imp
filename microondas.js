@@ -51,10 +51,12 @@ function microondas(opcao = "", tempo = 0) {
   }
 }
 
-microondas("pipoca", 12);
-microondas("Macarrão", 16);
-microondas("feiJão", 36);
-microondas("bigadeiro", 8);
+// Exemplos para teste:
+// microondas("pipoca", 12);
+// microondas("Macarrão", 16);
+// microondas("feiJão", 36);
+// microondas("bigadeiro", 8);
+
 
 // Versão de código menor usando objects do JS.
 
@@ -77,7 +79,8 @@ const microondas2 = (opcao = "", tempo = 0) => {
   else console.log("RESULTADO: Tempo insuficiente.")
 }
 
-microondas2("pipoca", 12);
-microondas2("Macarrão", 16);
-microondas2("feiJão", 36);
-microondas2("bigadeiro", 8);
+// Exemplos para teste:
+// microondas2("pipoca", 12);
+// microondas2("Macarrão", 16);
+// microondas2("feiJão", 36);
+// microondas2("bigadeiro", 8);
